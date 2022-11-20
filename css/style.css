@@ -1085,3 +1085,40 @@ body {
   height: 64px;
   margin: 80px auto 0;
 }
+
+/* ---------- js ---------- */
+.js_body.is_active {
+  overflow: hidden;
+}
+
+.js_navigation.is_active {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+.js_hamburger.is_active .m_hamburger-bar:first-child {
+  top: 50%;
+  transform: translate(-50%, 0) rotate(45deg);
+}
+
+.js_hamburger.is_active .m_hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.js_hamburger.is_active .m_hamburger-bar:last-child {
+  top: 50%;
+  transform: translate(-50%, 0) rotate(-45deg);
+}
+
+.js_faq-a {
+  display: none;
+}
+
+.js_faq_mark.is_open::before {
+  opacity: 0;
+}
+
+.js_page-top.is_active {
+  right: 24px;
+}
+
